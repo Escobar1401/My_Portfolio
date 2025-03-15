@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.contenido {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.contenido::-webkit-scrollbar {
+    display: none;
+}
+
+.contenido{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contenido > :nth-child(1){
+    border: 1px solid red;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr 1fr 1fr;
+    padding: 100px;
+    gap: 1px;
+}
+
+.contenido > :nth-child(1) > .titulo{
+    border: 2px solid orange;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 60px 5px 30px 5px;
+    gap: 1px;
+}
+
+.contenido > :nth-child(1) > .titulo > .titulo_porta{
+    border: 2px solid blue;
+    width: 90%;
+    height: 100%;
+
+}
+.contenido > :nth-child(1) > .titulo > .titulo_folio{
+    border: 2px solid blue;
+    width: 90%;
+    height: 100%;
+    margin: 0px 0px 0px 10%;
+
+}
+
+.contenido > :nth-child(1) > .subtitulo{
+    border: 2px solid orange;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(1) > .by{
+    border: 2px solid orange;
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px;
+    padding: 1px;
+}
+
+.contenido > :nth-child(1) > .by > .designed{
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(1) > .by > .nombre{
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(2){
+    border: 1px solid red;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 60px;
+}
+
+.contenido > :nth-child(2) > .acerca_de_mi{
+    border: 2px solid orange;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 3fr 2fr;
+    gap: 1px;
+    padding: 1px;
+}
+
+.contenido > :nth-child(2) > .acerca_de_mi > .resumen{
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr;
+    gap: 1px;
+    padding: 1px;
+}
+
+.contenido > :nth-child(2) > .acerca_de_mi > .resumen > .titulo{
+    border: 2px solid green;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(2) > .acerca_de_mi > .resumen > .descripcion{
+    border: 2px solid green;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(2) > .acerca_de_mi > .redes{
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    gap: 1px;
+    padding: 1px;
+}
+.contenido > :nth-child(2) > .acerca_de_mi > .redes > .titulo{
+    border: 2px solid green;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(2) > .acerca_de_mi > .redes > .iconos{
+    border: 2px solid green;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(2) > .acerca_de_mi > .redes > .descripcion{
+    border: 2px solid green;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(2) > .acerca_de_mi > .datos_importantes{
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 1px;
+    padding: 1px;
+}
+
+.contenido > :nth-child(2) > .acerca_de_mi > .datos_importantes > .titulo{
+    border: 2px solid green;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(2) > .acerca_de_mi > .datos_importantes > .descripcion{
+    border: 2px solid green;
+    width: 100%;
+    height: 100%;
+}
+
+
+.contenido > :nth-child(2) > .imagen{
+    border: 2px solid orange;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(3){
+    border: 1px solid red;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+}
+
+.contenido > :nth-child(3) > .proyectos{
+    border: 2px solid orange;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    gap: 50px;
+    padding: 15px;
+}
+
+.contenido > :nth-child(3) > .proyectos > .titulo{
+    border: 2px solid blue;
+    width: 50%;
+    height: 100%;
+}
+
+.contenido > :nth-child(3) > .proyectos > .contenido_imagenes{
+    border: 2px solid blue;
+    width: 95%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px;
+    padding: 1px;
+}
+
+.contenido > :nth-child(3) > .proyectos > .contenido_imagenes > .imagen{
+    border: 2px solid green;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(4){
+    border: 1px solid red;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+
+.contenido > :nth-child(4) > .experiencia{
+    border: 2px solid orange;
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 10fr;
+    gap: 1px;
+    padding: 1px;
+}
+
+.contenido > :nth-child(4) > .experiencia > .titulo{
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(4) > .experiencia > .estudios{
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px;
+    padding: 1px;
+}
+
+.contenido > :nth-child(4) > .experiencia > .estudios > .informacion{
+    border: 2px solid green;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 8fr;
+    grid-template-rows: 1fr;
+    gap: 1px;
+    padding: 1px;
+}
+
+.contenido > :nth-child(4) > .experiencia > .estudios > .informacion > .fecha{
+    border: 2px solid magenta;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(4) > .experiencia > .estudios > .informacion > .icono{
+    border: 2px solid purple;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(4) > .experiencia > .estudios > .informacion > .descripcion{
+    border: 2px solid cyan;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(5){
+    border: 1px solid red;
+    width: 100%;
+    height: 100vh;
+    padding: 80px;
+}
+
+.contenido > :nth-child(5) > .habilidades{
+    border: 2px solid orange;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr 1fr;
+    gap: 1px;
+    padding: 1px;
+}
+
+.contenido > :nth-child(5) > .habilidades > .titulo{
+    border: 2px solid blue;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px;
+    padding: 1px;
+}
+
+.contenido > :nth-child(5) > .habilidades > .titulo > .titulo_tabla_de{
+    border: 2px solid green;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.contenido > :nth-child(5) > .habilidades > .titulo > .titulo_habilidades{
+    border: 2px solid green;
+    width: 95%;
+    height: 100%;
+    margin: auto;
+}
+
+.contenido > :nth-child(5) > .habilidades > .fila_habilidades1{
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    padding: 1px;
+}
+
+.contenido > :nth-child(5) > .habilidades > .fila_habilidades1 > .icono{
+    border: 2px solid green;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido > :nth-child(5) > .habilidades > .fila_habilidades2{
+    border: 2px solid blue;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    padding: 1px;
+}
+
+.contenido > :nth-child(5) > .habilidades > .fila_habilidades2 > .icono{
+    border: 2px solid green;
+    width: 100%;
+    height: 100%;
+    
+}
